@@ -1,5 +1,6 @@
-import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
+import Header from "./Header";
 import Home from "./Home";
 
 function App() {
@@ -7,7 +8,7 @@ function App() {
     <BrowserRouter>
       <header>
         <nav>
-          <Link to="/">Home</Link>
+          <Header />
         </nav>
       </header>
       <main>
