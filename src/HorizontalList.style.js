@@ -2,15 +2,18 @@ import { createUseStyles } from "react-jss";
 
 const useStyles = createUseStyles({
   root: {
+    listStyle: "none",
+    margin: 0,
+    padding: 0,
     display: "flex",
-    flexDirection: "column",
-    justifyContent: "center",
-    padding: 16,
+    overflowX: "scroll",
   },
-  list: {
-    marginTop: 32,
+  item: {
+    padding: 8,
   },
-  error: { padding: 8, color: "red" },
+  link: {
+    textDecoration: "none",
+  },
 });
 
 export default useStyles;
