@@ -25,8 +25,9 @@ function Home() {
     [setSearchParams]
   );
 
-  const { data, isLoading, isFetching, error } = useQuery("movies", () =>
-    fetch(buildUrl(value)).then((response) => response.json())
+  const { data, isLoading, isFetching, error } = useQuery(
+    ["movies", value],
+    () => fetch(buildUrl(value)).then((response) => response.json())
   );
 
   return (

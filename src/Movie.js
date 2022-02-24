@@ -39,8 +39,8 @@ function Movie() {
           </p>
           <div className={classes.genres}>
             {movie.genre_ids.map((genre) => (
-              <div className={classes.genre}>
-                <Genre key={genre} id={genre} />
+              <div key={genre} className={classes.genre}>
+                <Genre id={genre} />
               </div>
             ))}
           </div>
